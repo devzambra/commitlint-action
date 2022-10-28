@@ -1,8 +1,9 @@
-on: 
-  pull_request:
-    types: [opened, reopened, edited]
+name: 'Commitlint'
+
+on: [pull_request]
+
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
