@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: npm install
+      - run: yarn install
       - run: npx commitlint --from=HEAD~1
